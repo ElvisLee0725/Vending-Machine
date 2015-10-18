@@ -15,37 +15,37 @@ public class Level {
 			if(level == 0) {
 				switch(i) {
 					case 0:
-						p = new Coke();
+						p = Product.Coke;
 						break;
 					case 1:
-						p = new CokeZero();
+						p = Product.CokeZero;
 						break;
 					case 2:
-						p = new DietCoke();
+						p = Product.DietCoke;
 						break;
 					default:
-						p = new Coke();
+						p = Product.Coke;
 						break;
 				}
 			}
 			else if(level == 1) {
 				switch(i) {
 					case 0:
-						p = new Fanta();
+						p = Product.Fanta;
 						break;
 					case 1:
-						p = new Sprite();
+						p = Product.Sprite;
 						break;
 					case 2:
-						p = new Water();
+						p = Product.Water;
 						break;
 					default:
-						p = new Water();
+						p = Product.Water;
 						break;
 				}
 			}
 			else {
-				p = new Coke();
+				p = Product.Coke;
 			}
 			cells[i] = new Cell(i, p, 3); // parameter: level, position, product, inventory
 		}		
